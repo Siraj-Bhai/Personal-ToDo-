@@ -45,7 +45,7 @@ while True:
     print("2. List All Tasks")
     print("3. Complete Task")
     print("4. List Completed Tasks")
-    print("5. ListPending Tasks")
+    print("5. List Pending Tasks")
     print("6. Delete Task")
     print("7. Exit")
    
@@ -58,17 +58,16 @@ while True:
     elif choice == '2':
         list_works()
     elif choice == '3':
-        task_id = int(input("Enter task ID to mark as completed: "))
+        task_id = int(input("Enter Task ID To Complete The Task: "))
         complete_work(task_id)
     elif choice == '4':
         completed_works()
     elif choice == '5':
         pending_works()
     elif choice == '6':
-        task_id = int(input("Enter task ID to delete: "))
+        task_id = int(input("Enter Task ID To Delete The Task: "))
         delete_work(task_id)
     elif choice == '7':
         break
-    
     else:
-        print("Invalid choice. Please try again.")
+        print("Invalid Choice... Please Try Again...")
